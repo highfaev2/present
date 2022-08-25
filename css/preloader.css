@@ -1,0 +1,59 @@
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #e0e0e0;
+    z-index: 1001;
+    /*Текст посередине*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: preloader-disable 2s 1 linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes preloader-disable {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+h1{
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    color: #212121;
+    font-size: 150px;
+    border-bottom: solid #212121 10px;
+}
+
+h1:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Loading...";
+    color: #2a8c50;
+    border-bottom: 10px solid #2a8c50;
+    overflow: hidden;
+    animation: loading 2s 1 linear;
+}
+
+@keyframes loading {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+
