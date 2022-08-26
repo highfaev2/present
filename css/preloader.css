@@ -1,18 +1,18 @@
-.preloader {
+#preloader {
     /*фиксированное позиционирование*/
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    background: #e0e0e0;
+    background: #030303;
     z-index: 1001;
     /*Текст посередине*/
     display: flex;
     justify-content: center;
     align-items: center;
     animation: preloader-disable 2s 1 linear;
-    animation-delay: 2s;
+    animation-delay: 8s;
     animation-fill-mode: forwards;
 }
 
@@ -26,23 +26,23 @@
     }
 }
 
-h1{
+#preloader > h1{
     font-family: 'Lato', sans-serif;
     position: relative;
-    color: #212121;
-    font-size: 150px;
-    border-bottom: solid #212121 10px;
+    color: #424242;
+    font-size: 10vw;
+    border-bottom: solid #424242 10px;
 }
 
-h1:before {
+#preloader > h1:before {
     position: absolute;
     top: 0;
     left: 0;
-    content: "Loading...";
-    color: #2a8c50;
-    border-bottom: 10px solid #2a8c50;
+    content: "Привет,Надя";
+    color: #00ffb9;
+    border-bottom: 10px solid #00ffb9;
     overflow: hidden;
-    animation: loading 2s 1 linear;
+    animation: loading 8s 1 linear;
 }
 
 @keyframes loading {

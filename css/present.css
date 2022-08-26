@@ -1,26 +1,27 @@
-.gift-box{
+#gift-box{
     background: #212121;
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    text-align: center;
+    z-index: 1000;
 }
 
-.gift-box > input{
-    height: 50vw;
+#gift-box > input{
+    height: 60vmin;
     opacity: 0;
     position: absolute;
-    top: 50%;
-    right: 30%;
     animation: shake 2s ease infinite;
     animation-fill-mode: forwards;
 
 }
 
-.gift-box > img{
+#gift-box > img{
+    width: 40vw;
     position: absolute;
-    height: 120vh;
-    width: 90vw;
+    top: -100%;
+    right: -100%;
     opacity: 0;
     z-index: 1;
     overflow: hidden;

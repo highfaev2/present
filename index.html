@@ -3,21 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/present.css">
+    <link rel="stylesheet" href="css/congratulations.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
 </head>
-<body>
-    <audio src="audio/ambiant1.mp3" autoplay="autoplay"></audio>
-    <div class="preloader">
-        <h1>Loading...</h1>
+<body id="main">
+
+    <div id="preloader">
+        <h1>Привет,Надя</h1>
     </div>
 
-    <div class="gift-box">
-       <input id="gift" type="image" src="img/present.png" alt="Кнопка «input»">
-       <img id="light" src="img/light1.png">
+    <div id="gift-box">
+       <audio id="music1" src="audio/ambiant1.mp3"></audio>
+        <input id="gift" type="image" src="/img/present.png" alt="Кнопка «input»" onclick="onclick1()">
+       <img id="star" src="img/star.png" alt="Звезда">
+    </div>
+
+    <div id="congrats">
+        <audio id="music2" src="audio/happy_music.mp3"></audio>
+        <span id="main-text-1"><span id="text-1">С </span> <span id="text-2">д</span><span id="text-3">н</span><span id="text-4">ё</span><span id="text-5">м </span> <span id="text-6">р</span><span id="text-7">о</span><span id="text-8">ж</span><span id="text-9">д</span><span id="text-10">е</span><span id="text-11">н</span><span id="text-12">и</span><span id="text-13">я</span><span id="text-14">!</span></span>
+
+        <span id="main-text-2">Поздравляю тебя с наступлением 17 лет! В данной интернет открытке я хочу тебя поздравить с этим событием</span>
+
+        <div id="fact">
+            <span class="info-text-main">В чем смысл имени Надя?</span>
+            <span class="info-text">Имя Надежда имеет греческие корни и является буквальным переводом греческого имени Элпис, которое носила одна из трёх сестёр, почитаемых христианских мучениц (Вера, Надежда и Любовь). Их имена отражают три главные добродетели христианства.</span>
+        </div>
+
+        <div id="main-text-3">
+            <span>Хочу пожелать тебе:</span>
+            <div id="">
+                <div id="first"><span>Здоровья</span></div>
+                <div id="second"></div>
+            </div>
+        </div>
     </div>
 
     <script src="js/animation-gift-box.js"></script>
+    <script src="js/animation-star.js"></script>
+    <script src="js/congrats.js"></script>
 </body>
 </html>
