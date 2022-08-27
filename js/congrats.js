@@ -1,4 +1,4 @@
-let name_color = ["#DC5BC1", "#FF8B58", "#F47335", "#D87E5D", "#CE666E", "#FC5588"];
+let name_color = ["#C355D0", "#6061C9", "#F62076", "#A556C6", "#5948B0", "#00AABF"];
 let k = 0;
 
 
@@ -15,4 +15,4 @@ setInterval(function() {
     }
     k = (k + 1) % 6;
 
-}, 700);
+}, 300);

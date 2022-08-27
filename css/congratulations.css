@@ -9,7 +9,7 @@
     flex-direction: column;
 }
 
-#congrats > #main-text-1{
+.main-text-1{
     margin-top: 2%;
 
     font-family: 'Source Sans Pro', sans-serif;
@@ -23,9 +23,10 @@
     0px 34px 30px rgba(0,0,0,0.1);
 }
 
-#congrats > #main-text-2{
-    padding-top: 5%;
-
+.main-text-2{
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 9vmin;
     font-weight: 1000;
@@ -37,38 +38,16 @@
     0px 34px 30px rgba(0,0,0,0.1);
 }
 
-#fact{
+table{
     margin-top: 5%;
-    margin-right: 5%;
-    margin-left: 5%;
-    display: flex;
-    flex-direction: column;
+    table-layout: fixed;
+    width:100%;
 }
-.info-text-main{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 9vmin;
-    font-weight: 1000;
-    background-image: linear-gradient(90deg, #5500ff, #f700ff);
-    border-bottom: 10px solid #0076ff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.info-text{
-    margin-top: 1%;
+
+th{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 7vmin;
     font-weight: 1000;
-    background-image: linear-gradient(90deg, #ff00c3, #f700ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#congrats > #main-text-3{
-    padding-top: 5%;
-
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 9vmin;
-    font-weight: 1000;
     color: #ffffff;
 
     text-shadow: 0px 3px 0px #b2a98f,
@@ -76,7 +55,9 @@
     0px 24px 2px rgba(0,0,0,0.1),
     0px 34px 30px rgba(0,0,0,0.1);
 
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    border: 1px solid black;
+}
+
+th > img{
+    width: 100%;
 }
