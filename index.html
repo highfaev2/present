@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/present.css">
+    <link rel="stylesheet" href="css/congratulations.css">
+    <link rel="stylesheet" href="css/final.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+</head>
+<body id="main">
+
+    <div id="preloader">
+        <h1>Привет,Надя!</h1>
+    </div>
+
+    <div id="gift-box">
+       <input id="gift" type="image" src="img/present.png" alt="Кнопка «input»" onclick="onclick1()">
+       <img id="star" src="img/star.png" alt="Звезда">
+    </div>
+
+    <div id="congrats">
+        <audio id="music2" src="audio/happy_music.mp3"></audio>
+        <span class="main-text-1"><span id="text-1">С </span> <span id="text-2">д</span><span id="text-3">н</span><span id="text-4">ё</span><span id="text-5">м </span> <span id="text-6">р</span><span id="text-7">о</span><span id="text-8">ж</span><span id="text-9">д</span><span id="text-10">е</span><span id="text-11">н</span><span id="text-12">и</span><span id="text-13">я</span><span id="text-14">!</span></span>
+        <span class="main-text-2">Поздравляю тебя с наступлением 17 лет!</span>
+        <span class="main-text-2">Хочу тебе пожелать:</span>
+        <table id="pozel">
+            <img id="img-1" src="img/white.png" alt="white">
+            <img id="img-2" src="img/white.png" alt="white">
+            <img id="img-3" src="img/white.png" alt="white">
+            <tr>
+                <th id="table-1">Здоровья тебе и всем, кем ты дорожишь</th>
+                <th id="table-2">Ведь здоровье это фундамент счастливой жизни. Поэтому на него нужно обращать внимание, особенно, если часто попадаешь в неприятные ситуации)</th>
+                <th id="table-3"> <img id="pozel-img" src="img/sasha-est.png" alt="image"></th>
+            </tr>
+
+        </table>
+        <input id="button1" type="image" src="img/button1.png" alt="Кнопка «input»" onclick="onclick2()">
+        <span class="main-text-3">На прощание хочу вручить тебе этот тортик<br>(На него можно нажать)</span>
+        <img id="tortik" src="img/tort4.png" alt="tortik">
+    </div>
+
+    <div id="final-cutscene">
+        <audio src="audio/happy_birthday.mp3" id="player1"></audio>
+        <audio src="audio/claps.mp3" id="player2"></audio>
+        <audio src="audio/claps2.mp3" id="player3"></audio>
+        <img id="tortik2"  src="img/tort2.png" alt="tortik" >
+        <span id="main-text-4">Загадывай желание и жми на торт</span>
+
+    </div>
+    <div id="final-words">
+        <span id="main-text-5">С наилучшими пожеланиями<br><br>Арсений</span>
+    </div>
+    <script src="js/animation-gift-box.js"></script>
+    <script src="js/animation-star.js"></script>
+    <script src="js/congrats.js"></script>
+    <script src="js/final.js"></script>
+    <script src="js/torkitanim.js"></script>
+</body>
+</html>
